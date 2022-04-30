@@ -2,7 +2,8 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import {createTheme, CssBaseline, ThemeProvider} from '@mui/material';
+import {Box, createTheme, CssBaseline, ThemeProvider} from '@mui/material';
+import SideBar, {LinkItem} from 'components/SideBar';
 import type {AppProps} from 'next/app';
 
 const theme = createTheme({
@@ -17,11 +18,18 @@ const theme = createTheme({
   },
 });
 
+const linkItems: LinkItem[] = [{name: 'Top', link: '/'}];
+
 function MyApp({Component, pageProps}: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Component {...pageProps} />
+      <Box sx={{display: 'flex'}}>
+        <SideBar linkItems={linkItems} />
+        <Box component="main" sx={{flexGrow: 1}}>
+          <Component {...pageProps} />
+        </Box>
+      </Box>
     </ThemeProvider>
   );
 }
