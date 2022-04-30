@@ -14,8 +14,8 @@ export function assertArray(v: unknown, target = ''): asserts v is Array<unknown
   }
 }
 
-export function assertNonUndefined<T>(v: T, target = ''): asserts v is Exclude<T, undefined> {
+export function assertNotUndefined<T>(v: T, target = ''): asserts v is Exclude<T, undefined> {
   if (v === undefined) {
-    throw new Error(`${target} should be non undefined`.trim());
+    throw new Error(`${target} should be not undefined`.trim());
   }
 }
