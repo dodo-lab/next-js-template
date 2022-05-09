@@ -3,7 +3,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import {Box, createTheme, CssBaseline, ThemeProvider} from '@mui/material';
-import SideBar, {LinkItem} from 'components/SideBar';
+import {LinkItem, SideBar} from 'components/SideBar';
 import type {AppProps} from 'next/app';
 
 const theme = createTheme({

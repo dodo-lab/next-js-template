@@ -21,7 +21,7 @@ const CustomDrawer = styled(Drawer)(() => ({
   },
 }));
 
-const SideBar: React.FC<Props> = ({linkItems}) => {
+export const SideBar: React.FC<Props> = ({linkItems}) => {
   const router = useRouter();
 
   return (
@@ -39,5 +39,3 @@ const SideBar: React.FC<Props> = ({linkItems}) => {
     </CustomDrawer>
   );
 };
-
-export default SideBar;
