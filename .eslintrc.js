@@ -13,6 +13,10 @@ module.exports = {
           module: 'framework/server',
           allowReferenceFrom: [...path('src/pages/api')],
         },
+        {
+          module: 'framework/client',
+          allowReferenceFrom: [...path('!(src/framework/server/**|src/framework/common/**|src/pages/api/**)')],
+        },
       ],
     ],
   },
