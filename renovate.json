@@ -1,6 +1,32 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "groupName": "Next.js",
+      "matchPackagePrefixes": [
+        "next",
+        "eslint-config-next",
+        "react",
+        "react-dom",
+        "@types/node",
+        "@types/react",
+        "typescript"
+      ]
+    },
+    {
+      "groupName": "Development",
+      "matchPackagePrefixes": ["eslint", "eslint-plugin-strict-dependencies"]
+    },
+    {
+      "groupName": "Material UI",
+      "matchPackagePrefixes": [
+        "eslint@emotion/react",
+        "@emotion/styled",
+        "@fontsource/roboto",
+        "@mui/icons-material",
+        "@mui/material"
+      ]
+    }
   ]
 }
