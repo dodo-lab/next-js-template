@@ -19,6 +19,7 @@
       "matchPackagePrefixes": [
         "eslint@emotion/react",
         "@emotion/styled",
+        "@emotion/react",
         "@fontsource/roboto",
         "@mui/icons-material",
         "@mui/material"
