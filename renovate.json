@@ -5,27 +5,27 @@
     {
       "groupName": "Next.js",
       "matchPackagePrefixes": [
-        "next",
-        "eslint-config-next",
-        "react",
-        "react-dom",
-        "@types/node",
-        "@types/react",
-        "typescript"
+        "next/",
+        "eslint-config-next/",
+        "react/",
+        "react-dom/",
+        "@types/node/",
+        "@types/react/",
+        "typescript/"
       ]
     },
     {
-      "groupName": "Development",
-      "matchPackagePrefixes": ["eslint", "eslint-plugin-strict-dependencies"]
+      "groupName": "Development/",
+      "matchPackagePrefixes": ["eslint/", "eslint-plugin-strict-dependencies/"]
     },
     {
       "groupName": "Material UI",
       "matchPackagePrefixes": [
-        "eslint@emotion/react",
-        "@emotion/styled",
-        "@fontsource/roboto",
-        "@mui/icons-material",
-        "@mui/material"
+        "eslint@emotion/react/",
+        "@emotion/styled/",
+        "@fontsource/roboto/",
+        "@mui/icons-material/",
+        "@mui/material/"
       ]
     }
   ]
